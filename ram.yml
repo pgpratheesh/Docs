@@ -1,0 +1,11 @@
+---
+- hosts: win
+  tasks:
+  - name: Adding Users
+    win_user:
+     name: ram
+     password: W3lc0mee
+     comment: "Ramchandran"
+     state: present
+     groups:
+       - users
