@@ -1,0 +1,8 @@
+---
+- hosts: web
+  become: true
+  tasks:
+    - name: Extract archive
+      unarchive:
+        src: /opt/apache-tomcat-7.0.61.tar.gz
+        dest: /opt
